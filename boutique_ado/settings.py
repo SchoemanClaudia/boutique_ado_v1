@@ -27,12 +27,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-(iwwf30(5x&7lvu9lll9phuzd$w7l(anm$o0$^^^2&1@fd(35$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = [
     '127.0.0.1', # vs code preview
     'localhost', # listen for stripe webhooks
-    'boutique-ado-walkthrough-p5-0fa512813e18.herokuapp.com/' # heroku application
+    'boutique-ado-walkthrough-p5-0fa512813e18.herokuapp.com/', # heroku application
 ]
 
 
